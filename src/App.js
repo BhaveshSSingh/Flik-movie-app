@@ -1,14 +1,23 @@
 import "./App.css";
-import SearchMovie from "./search/SearchMovie";
-// import NavBar from "./shared/NavBar";
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Search from "./pages/Search";
+import Chat from "./pages/Chat";
+import Favourite from "./pages/Favourite";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
     <>
-      <div className="App">
-        <SearchMovie />
-      </div>
+      <Router>
+        <NavBar />
+        <Switch>
+          <Route path="/home" exact component={Home} />
+          <Route path="/search" exact component={Search} />
+          <Route path="/chat" exact component={Chat} />
+          <Route path="/favourite" exact component={Favourite} />
+        </Switch>
+      </Router>
     </>
   );
 }
