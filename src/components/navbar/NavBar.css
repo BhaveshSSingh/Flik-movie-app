@@ -1,3 +1,9 @@
+.app-name {
+  text-align: center;
+  padding: 1rem;
+  padding-right: 10rem;
+}
+
 .navbar {
   background-color: var(--dark-blue);
   height: 80px;
@@ -6,12 +12,6 @@
   align-items: center;
 }
 
-.popcornIcon {
-  margin-top: 10px;
-  width: 15%;
-  height: auto;
-  margin-left: -20px;
-}
 li {
   list-style: none;
 }

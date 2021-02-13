@@ -1,10 +1,10 @@
 import "./App.css";
-import NavBar from "./components/NavBar";
+import NavBar from "./components//navbar/NavBar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Search from "./pages/Search";
 import Chat from "./pages/Chat";
 import Favourite from "./pages/Favourite";
-import Home from "./pages/Home";
+import Home from "./pages/home/Home";
 
 export default function App() {
   return (
