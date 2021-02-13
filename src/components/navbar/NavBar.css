@@ -1,7 +1,7 @@
 .app-name {
-  text-align: center;
-  padding: 1rem;
-  padding-right: 10rem;
+  font-size: 3rem;
+  margin-left: 10px;
+  margin-bottom: 38px;
 }
 
 .navbar {
