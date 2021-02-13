@@ -70,6 +70,7 @@ li {
 .nav-text a:hover {
   background-color: var(--orange);
   color: white;
+  box-shadow: 3px 7px 4px 3px rgba(254, 103, 55, 0.2);
 }
 
 .nav-menu-items {
