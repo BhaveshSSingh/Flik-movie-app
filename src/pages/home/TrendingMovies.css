@@ -1,13 +1,23 @@
+.trending-text {
+  padding-left: 1.5rem;
+  font-size: 1.5rem;
+}
+
 .movie {
   background-color: var(--light-blue);
   border-radius: 3px;
   box-shadow: 0 -3px 3px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   margin: 1rem;
-  width: 250px;
+  width: 220px;
   position: relative;
 }
-
+@media (max-width: 600px) {
+  .movie {
+    width: 300px;
+    margin-left: 5rem;
+  }
+}
 .movie img {
   max-width: 100%;
 }
@@ -20,7 +30,7 @@
 .movie-info {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 1rem;
 }
 .movie-info h3 {
@@ -44,4 +54,19 @@
 }
 .movie:hover .movie-overview {
   transform: translateY(0%);
+}
+.tag {
+  background-color: var(--dark-blue);
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.tag.green {
+  color: #00ff80;
+}
+.tag.orange {
+  color: var(--orange);
+}
+.tag.red {
+  color: #ff3232;
 }

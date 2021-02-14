@@ -21,7 +21,7 @@ const NavBar = () => {
         <ul className="nav-menu-items" onClick={showSidebar}>
           <li>
             <Link to="#" className="menu-icon">
-              <IoIcons.IoPizzaOutline />
+              <IoIcons.IoCloseOutline />
             </Link>
           </li>
 
