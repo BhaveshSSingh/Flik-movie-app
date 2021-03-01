@@ -6,7 +6,6 @@
   align-items: stretch;
   align-content: flex-start;
   padding-top: 1rem;
-  padding-right: 1rem;
 }
 .genre-container :hover {
   background-color: var(--orange);
@@ -14,6 +13,7 @@
 }
 
 .genre-item {
+  margin-left: 1rem;
   flex-direction: row;
   margin-top: 1rem;
   text-align: center;
@@ -24,4 +24,6 @@
   height: 150px;
   width: 100px;
   border: 1px solid var(--dark-blue);
+}
+.button {
 }

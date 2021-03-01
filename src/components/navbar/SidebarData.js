@@ -1,30 +1,37 @@
 import React from "react";
-import * as FiIcons from "react-icons/fi";
-import * as IoIcons from "react-icons/io5";
+import Emoji from "react-apple-emojis";
 
 export const SidebarData = [
   {
-    title: "Home",
-    path: "/Home",
-    icons: <IoIcons.IoHomeOutline />,
+    title: "Trending",
+    path: "/",
+    icons: <Emoji name="fire" width={25} />,
+
+    cName: "nav-text",
+  },
+  {
+    title: "Movie",
+    path: "/Movie",
+    icons: <Emoji name="clapper-board" width={25} />,
+
+    cName: "nav-text",
+  },
+  {
+    title: "Shows",
+    path: "/TvShows",
+    icons: <Emoji name="television" width={25} />,
     cName: "nav-text",
   },
   {
     title: "Search",
     path: "/Search",
-    icons: <IoIcons.IoSearchSharp />,
+    icons: <Emoji name="magnifying-glass-tilted-left" width={30} />,
     cName: "nav-text",
   },
   {
-    title: "Chat",
-    path: "/Chat",
-    icons: <FiIcons.FiUsers />,
-    cName: "nav-text",
-  },
-  {
-    title: "Favourite",
-    path: "/Favourite",
-    icons: <FiIcons.FiHeart />,
+    title: "Genre",
+    path: "/Genre",
+    icons: <Emoji name="person-shrugging" width={30} />,
     cName: "nav-text",
   },
 ];

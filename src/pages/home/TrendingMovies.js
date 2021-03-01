@@ -5,7 +5,7 @@ import Movie from "./Movie";
 import Emoji from "react-apple-emojis";
 
 const TRENDING_URL =
-  "https://api.themoviedb.org/3/trending/all/day?api_key=d94af1ff039d5f85a5e16eb2c3c05d54";
+  "https://api.themoviedb.org/3/trending/all/week?api_key=d94af1ff039d5f85a5e16eb2c3c05d54";
 
 const TrendingMovies = () => {
   const [movies, setMovies] = useState([]);
@@ -21,12 +21,10 @@ const TrendingMovies = () => {
 
   return (
     <>
-      <h3 className="trending-text">
-        Trending on FLICK
-        <Emoji name="fire" width={20} />
-        <Emoji name="fire" width={20} />
-        <Emoji name="fire" width={20} />
-      </h3>
+      <div className="trending-text">
+        Trending on FLICK <Emoji name="fire" width={20} />{" "}
+        <Emoji name="fire" width={20} /> <Emoji name="fire" width={20} />
+      </div>
 
       <div className="movie-container">
         {movies.length > 0 &&

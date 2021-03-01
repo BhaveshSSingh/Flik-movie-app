@@ -1,15 +1,14 @@
-import { useEffect, useState } from "react";
-import Genre from "./Genre";
+import Footer from "../../components/navbar/Footer";
 import "./home.css";
 import TrendingMovies from "./TrendingMovies";
 
-const Home = () => {
+const TrendingPage = () => {
   return (
     <>
-      <Genre />
       <TrendingMovies />
+      <Footer />
     </>
   );
 };
 
-export default Home;
+export default TrendingPage;
