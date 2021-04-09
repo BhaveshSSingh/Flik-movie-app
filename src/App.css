@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 :root {
-  --bold-font: ;
-  --regular-font: ;
   --dark-blue: #211f41;
   --main-blue: #3f3e6d;
   --light-blue: #6561b6;
@@ -19,4 +17,17 @@ body {
   padding: 0;
   background: var(--main-blue);
   color: white;
+}
+/* Styling the scroll bar */
+body::-webkit-scrollbar {
+  width: 0.6rem;
+}
+body::-webkit-scrollbar-track {
+  background: var(--dark-blue);
+
+  /* background: #1e1e24; */
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: var(--orange);
 }
